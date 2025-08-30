@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.hero-section {
+    min-height: 80vh; 
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+.card-img-top {
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; 
+    transition: all 0.3s ease-in-out; 
+}
+
+footer {
+    border-top: 1px solid #333;
+}
